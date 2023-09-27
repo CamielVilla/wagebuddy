@@ -1,9 +1,3 @@
-@font-face {
-    font-family: 'Logo';
-    src: url("../../Fonts/Nickainley.otf");
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Belleza&family=Open+Sans:wght@300&display=swap');
 
 .outer-border {
     display: flex;
@@ -13,14 +7,15 @@
     vertical-align: middle;
     background-image: url('../../assets/banner.jpg');
     background-size: cover;
-    height: 950px;
+    height: 750px;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-position: center center;
+    background-position: center top;
     opacity: 0.6;
     border-style: groove;
     border-color: black;
     position: relative;
+    background-clip: content-box;
 }
 
 .inner-border {
@@ -32,6 +27,8 @@
     width: 1400px;
     border-style: groove;
     border-color: yellow;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .text-1, .text-2, .text-3 {
@@ -46,17 +43,3 @@
     text-align: center;
 }
 
-h1 {
-    font-family: Logo, serif;
-    font-size: 80px;
-    font-weight: lighter;
-    color: #653117;
-}
-
-h2 {
-    font-family: Belleza, serif;
-    font-size: 45px;
-    font-weight: lighter;
-    color:  #653117;
-
-}

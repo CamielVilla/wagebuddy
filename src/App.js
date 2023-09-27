@@ -1,8 +1,10 @@
 import './App.css';
 import React, {useState} from "react";
-import MainPage from "./Pages/mainpage/MainPage";
+import Banner from "./Pages/mainpage/Banner";
 import { useForm } from "react-hook-form"
 import axios from "axios";
+import Chapter from "./Pages/Chapter/Chapter";
+import stars from '../src/assets/Sterren.png'
 
 
 function App() {
@@ -42,12 +44,17 @@ function App() {
     }
   return (
      <>
-    <MainPage
+    <Banner
     buttonId='scrollButton'
     buttonClassName='scrollButtonClass'
     text='aanmelden'
     onClick={scrollToForm}
     />
+         <Chapter
+         text='Sluit je aan bij 241 blije professionals'
+         >
+             <img className='star-image' src={stars}/>
+         </Chapter>
          <div className='form-container'>
              <form id='applyForm' onSubmit={handleSubmit(handleFormSubmit)}>
                     <input

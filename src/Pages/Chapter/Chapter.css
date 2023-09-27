@@ -1,0 +1,20 @@
+.outer-chapter{
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*justify-content: center;*/
+    align-items: center;
+    border-style: groove;
+    border-color: yellow;
+}
+
+.inner-chapter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: groove;
+    border-color: green;
+    margin-top: 50px;
+    text-align: center;
+}
+

@@ -1,9 +1,9 @@
 import React from "react";
-import './MainPage.css'
+import './Banner.css'
 import '../../assets/banner.jpg'
 import Button from "../../Reusables/Button/Button";
 
-function MainPage({text, onClick, buttonId, buttonClassName}){
+function Banner({text, onClick, buttonId, buttonClassName}){
     return (
         <div className='outer-border'>
             <div className='inner-border'>
@@ -23,4 +23,4 @@ function MainPage({text, onClick, buttonId, buttonClassName}){
     )
 }
 
-export default MainPage;
+export default Banner;

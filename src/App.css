@@ -2,3 +2,35 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.star-image {
+    height: 150px;
+}
+
+h1 {
+    font-family: Logo, serif;
+    font-size: 80px;
+    font-weight: lighter;
+    color: #653117;
+}
+
+h2 {
+    font-family: Belleza, serif;
+    font-size: 45px;
+    font-weight: lighter;
+    color:  #653117;
+}
+
+h3{
+    font-family: Belleza, serif;
+    font-size: 40px;
+    font-weight: lighter;
+    color:  #653117;
+}
+
+@font-face {
+    font-family: 'Logo';
+    src: url("../src/Fonts/Nickainley.otf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Belleza&family=Open+Sans:wght@300&display=swap');
