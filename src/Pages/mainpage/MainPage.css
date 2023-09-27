@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Logo';
+    src: url("../../Fonts/Nickainley.otf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Belleza&family=Open+Sans:wght@300&display=swap');
+
+.outer-border {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    background-image: url('../../assets/banner.jpg');
+    background-size: cover;
+    height: 950px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    opacity: 0.6;
+    border-style: groove;
+    border-color: black;
+    position: relative;
+}
+
+.inner-border {
+    display: flex;
+    flex-direction: row;
+    /*flex-shrink: 1;*/
+    justify-content: flex-start;
+    align-items:center;
+    width: 1400px;
+    border-style: groove;
+    border-color: yellow;
+}
+
+.text-1, .text-2, .text-3 {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    justify-content: space-around;
+    align-items:center;
+    width: 400px;
+    border-style: groove;
+    border-color: green;
+    text-align: center;
+}
+
+h1 {
+    font-family: Logo, serif;
+    font-size: 80px;
+    font-weight: lighter;
+    color: #653117;
+}
+
+h2 {
+    font-family: Belleza, serif;
+    font-size: 45px;
+    font-weight: lighter;
+    color:  #653117;
+
+}
