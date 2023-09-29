@@ -5,6 +5,10 @@ import { useForm } from "react-hook-form"
 import axios from "axios";
 import Chapter from "./Pages/Chapter/Chapter";
 import stars from '../src/assets/Sterren.png'
+import ThreePage from "./Pages/ThreePage/ThreePage";
+import HowItWorks from "./Pages/HowItWorks/HowItWorks";
+import TwoPage from "./Pages/TwoPage/TwoPage";
+import desk from '../src/assets/girlsdesk.jpg'
 
 
 function App() {
@@ -55,6 +59,31 @@ function App() {
          >
              <img className='star-image' src={stars}/>
          </Chapter>
+         <ThreePage/>
+         <Chapter text='Praktijkvoorbeeld: Jonne'/>
+         <TwoPage textOne='#1 Jonne zou met haar salaris op een verwacht verzamelinkomen uitkomen van €53.000 over 2023, op basis van 38 uur uur werken.
+         #2 Ze was geïnteresseerd in een 38-urige baan met een salaris-range van €50.000 - €70.000.
+#3 Een gemiddelde vrouw van haar leeftijd zou na de onderhandeling uitkomen op €59.000, wat voor Jonne ook voelde als een prima salaris. Normaal gesproken zou ze op dit salaris mikken.'
+                  textTwo='#4 Ze besloot om met WageBuddy in zee te gaan,
+                   die voor haar een salaris van €68.000 onderhandelde, ofwel €9.000 boven het verwachte salaris.
+#  5 De 50% bonus voor WageBuddy kwam neer op €4.500, die Jonne nu in 12 termijnen €375 betaalt.
+#6 Het resultaat voor Jonne is €4.500 over het eerste jaar,
+en €9.000 over ieder jaar daarop. Bovendien heeft ze bij haar volgende job
+switch een veel betere uitgangspositie.'
+         />
+         <TwoPage textTwo='Waarom ons vertrouwen?
+Transparantie  We laten je precies zien hoe we tot onze schattingen komen
+Geen verborgen kosten. Onze dienst is gratis voor jou.
+We verdienen alleen als jij meer verdient. Jouw succes is ons succes
+ We zijn gemotiveerd om het beste salaris voor je te onderhandelen.'
+                  image={desk}
+                  />
+         <HowItWorks
+             buttonId='scrollButton'
+             buttonClassName='scrollButtonClass'
+             text='aanmelden'
+             onClick={scrollToForm}
+         />
          <div className='form-container'>
              <form id='applyForm' onSubmit={handleSubmit(handleFormSubmit)}>
                     <input

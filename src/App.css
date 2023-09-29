@@ -28,6 +28,20 @@ h3{
     color:  #653117;
 }
 
+h5{
+    font-family: Belleza, serif;
+    font-size: 20px;
+    font-weight: lighter;
+    color:  #653117;
+}
+
+p{
+    font-family: Belleza, serif;
+    font-size: 25px;
+    font-weight: lighter;
+    color:  #653117;
+}
+
 @font-face {
     font-family: 'Logo';
     src: url("../src/Fonts/Nickainley.otf");
