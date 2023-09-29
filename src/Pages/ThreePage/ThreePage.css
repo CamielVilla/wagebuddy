@@ -9,7 +9,7 @@
  .inner-three{
      display: flex;
      flex-direction: row;
-     justify-content: center;
+     justify-content: space-between;
      align-items: flex-start;
      border-style: groove;
      border-color: green;
@@ -19,7 +19,7 @@
  }
 
  .inner-three div{
-     width: 400px;
+     width: 466px;
      padding: 50px;
      border-style: groove;
      border-color: black;

@@ -28,6 +28,13 @@ h3{
     color:  #653117;
 }
 
+h4 {
+    font-family: Belleza, serif;
+    font-size: 35px;
+    font-weight: lighter;
+    color:  #653117;
+}
+
 h5{
     font-family: Belleza, serif;
     font-size: 20px;
@@ -40,6 +47,9 @@ p{
     font-size: 25px;
     font-weight: lighter;
     color:  #653117;
+}
+.guy-image{
+    flex-direction: row;
 }
 
 @font-face {
