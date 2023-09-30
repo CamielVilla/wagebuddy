@@ -30,8 +30,10 @@ function App() {
     async function handleFormSubmit(data){
         try{
             setLoading(true);
-            const response = await axios.post("https://thelastages.herokuapp.com/addemail",{
+            const response = await axios.post("https://wagebuddy-f935672a2f3c.herokuapp.com/addemail",{
+                name: data.name,
                 emailAddress: data.email,
+                phone: data.tel,
             })
 
             if (response.data){
@@ -149,10 +151,10 @@ function App() {
                              })}
                      />
                      <input
-                         id="telefoon"
-                         type="telefoon"
+                         id="tel"
+                         type="tel"
                          placeholder="telefoonnummer"
-                         {...register("telefoon",
+                         {...register("tel",
                              {required: {
                                      value: true,
                                      message: 'vul je telefoonnummer in',
