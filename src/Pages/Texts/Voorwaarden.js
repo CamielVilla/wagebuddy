@@ -5,6 +5,7 @@ function Voorwaarden(){
         <div className='outer-div'>
             <div className='inner-div'>
                 <h2>
+
                     Voorwaarden
                     <br/><br/>
                 </h2>

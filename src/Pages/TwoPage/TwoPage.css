@@ -1,25 +1,30 @@
-.outer-two-page, .outer-div{
+.outer-two-page, .outer-div, .why-trust-us-outer{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.inner-two-page, .inner-two-page-reversed{
+.inner-two-page-vertrouwen, .inner-two-page-reversed, .why-trust-us-inner{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
     margin-top: 50px;
     text-align: center;
     width: 1400px;
+}
+
+
+.why-trust-us-inner{
+    flex-direction: column;
 }
 
 .inner-two-page-reversed {
     flex-direction: row;
 }
 
-.inner-two-page div {
+.inner-two-page-vertrouwen div {
     width: 700px;
     padding-left: 30px;
     padding-right: 30px;
@@ -36,16 +41,19 @@
 .two-page-text-1 img{
     width: 500px;
     opacity: 60%;
-    z-index: -100;
 }
+
+
 
 
 
 .inner-two-page-reversed img{
     width: 700px;
 }
-.inner-two-page img{
-    width: 700px;
+.inner-two-page-vertrouwen img{
+    width: 600px;
+    margin-right: 40px;
+
 }
 
 .inner-div{
@@ -71,7 +79,7 @@ input{
     border-radius: 10px;
     border-width: medium;
     height: 75px;
-    width: 300px;
+    width: 350px;
     text-align: center;
     margin: 10px;
 }
@@ -79,4 +87,58 @@ input{
 }
 .why-wage-buddy-inner{
     width: 500px;
+}
+
+.outer-div-praktijkvoorbeeld{
+    margin-top: 40px;
+}
+
+@media (min-width: 100px) and (max-width: 1400px) {
+    .outer-two-page{
+    flex-direction: row;
+    }
+    .inner-two-page, .inner-two-page-reversed{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .inner-two-page-vertrouwen {
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .two-page-text-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .inner-two-page-vertrouwen img, .inner-two-page-reversed img {
+        width:80%;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .two-page-text-1{
+        text-align: center;
+        padding: 50px;
+    }
+
+    .why-wage-buddy-inner {
+        width: 300px;
+    }
+
+    .outer-div-praktijkvoorbeeld {
+        /*flex-direction: row;*/
+    }
+
+    .inner-div-jonne {
+        /*flex-direction: column;*/
+        /*justify-content: flex-start;*/
+        /*align-items: center;*/
+        width: 100px;
+    }
 }

@@ -2,8 +2,8 @@ import React from "react";
 
 function WhyTrustUs(){
     return(
-        <div className='outer-div'>
-            <div className='inner-div'>
+        <div className='why-trust-us-outer'>
+            <div className='why-trust-us-inner'>
                 <h2>
                     Waarom ons vetrouwen?
                     <br/><br/>

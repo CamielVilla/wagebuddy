@@ -36,8 +36,6 @@ function HowItWorks({text, onClick, buttonId, buttonClassName}){
                         Bijv. als je 32 uur werkt is onze
                         fee 54% van wat je daadwerkelijk extra verdient</h5>
                 </div>
-
-
             </div>
         </div>
 

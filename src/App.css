@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Belleza&family=Open+Sans:wght@300&display=swap');
+
 *{
     margin: 0;
     box-sizing: border-box;
 }
 
-.star-image {
+.stars {
     width: 150px;
 }
 
@@ -56,9 +58,140 @@ p, ul, li{
     text-align: left;
 }
 
+.outer-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.inner-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 1400px;
+}
+
+.inner-bottom h2{
+    padding: 0;
+    margin: 0;
+}
+
+.inner-bottom input{
+    margin-top: 20px;
+}
+
+.outer-div-praktijkvoorbeeld {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.inner-div-praktijkvoorbeeld {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+    text-align: center;
+    width: 1400px;
+}
+
+.voorbeeld {
+    width: 600px;
+}
+
+.inner-bottom-text, .inner-bottom-form{
+    width: 500px;
+}
+
+.title {
+    text-align: center;
+}
+
 @font-face {
     font-family: 'Logo';
     src: url("../src/Fonts/Nickainley.otf");
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Belleza&family=Open+Sans:wght@300&display=swap');
+
+@media (min-width: 100px) and (max-width: 1400px) {
+    .stars {
+        width: 150px;
+    }
+
+    h1 {
+        font-family: Logo, serif;
+        font-size: 40px;
+        font-weight: lighter;
+        color: #653117;
+    }
+
+    .white-button {
+        margin-top: 50px;
+    }
+
+    .outer-div-praktijkvoorbeeld {
+        flex-direction: row;
+    }
+
+    .inner-div-praktijkvoorbeeld {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .voorbeeld {
+        width: 300px;
+    }
+
+ .outer-bottom{
+     flex-direction: row;
+ }
+
+ .inner-bottom {
+     flex-direction: column-reverse;
+     justify-content: flex-start;
+     align-items: center;
+ }
+
+    .inner-bottom h2 {
+        margin-top: 30px;
+    }
+    h2 {
+        font-family: Belleza, serif;
+        font-size: 45px;
+        font-weight: lighter;
+        color:  #653117;
+    }
+
+    h3{
+        font-family: Belleza, serif;
+        font-size: 40px;
+        font-weight: lighter;
+        color:  #653117;
+    }
+
+    h4 {
+        font-family: Belleza, serif;
+        font-size: 30px;
+        font-weight: lighter;
+        color:  #653117;
+    }
+
+    h5{
+        font-family: Belleza, serif;
+        font-size: 20px;
+        font-weight: lighter;
+        color:  #653117;
+    }
+
+
+}
+

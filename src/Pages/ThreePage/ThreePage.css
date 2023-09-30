@@ -15,8 +15,21 @@
  }
 
  .inner-three div{
-     width: 466px;
      width: 350px;
      margin-bottom: 50px;
      /*padding: 50px;*/
+ }
+ 
+ @media (min-width: 100px) and (max-width: 1400px){
+     .outer-three{
+         display: flex;
+         flex-direction: row;
+         width: 100%;
+     }
+
+     .inner-three{
+         flex-direction: column;
+         justify-content: flex-start;
+         align-items: center;
+     }
  }

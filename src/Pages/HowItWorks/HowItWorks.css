@@ -18,3 +18,14 @@
     width: 400px;
     padding: 50px;
 }
+
+@media (min-width: 100px) and (max-width: 1400px) {
+    .outer-how-it-works {
+        flex-direction: row
+    }
+    .inner-how-it-works {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
