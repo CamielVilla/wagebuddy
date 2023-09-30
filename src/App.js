@@ -28,9 +28,10 @@ function App() {
   }
 
     async function handleFormSubmit(data){
+      //
         try{
             setLoading(true);
-            const response = await axios.post("https://wagebuddy-17bc189c4ec0.herokuapp.com/addemail",{
+            const response = await axios.post("https://wagebuddy-f935672a2f3c.herokuapp.com/addemail",{
                 name: data.name,
                 emailAddress: data.email,
                 phone: data.tel,
@@ -171,9 +172,7 @@ function App() {
                                      })}
                              />
                              {loading ? (
-                                 <div className="loader-container">
                                      <div className="spinner"></div>
-                                 </div>
                              ) : addSucces ? (
                                  <h4>Je aanmelding is geslaagd!</h4>
                              ) : (
