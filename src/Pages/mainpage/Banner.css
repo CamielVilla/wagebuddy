@@ -12,8 +12,6 @@
     background-attachment: scroll;
     background-position: center top;
     opacity: 0.6;
-    border-style: groove;
-    border-color: black;
     position: relative;
     background-clip: content-box;
 }
@@ -25,8 +23,6 @@
     justify-content: flex-start;
     align-items:center;
     width: 1400px;
-    border-style: groove;
-    border-color: yellow;
     margin-left: 100px;
     margin-right: 100px;
 }
@@ -38,8 +34,6 @@
     justify-content: space-around;
     align-items:center;
     width: 400px;
-    border-style: groove;
-    border-color: green;
     text-align: center;
 }
 

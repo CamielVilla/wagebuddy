@@ -4,8 +4,14 @@ button {
     font-family: Belleza, serif;
     font-size: 35px;
     font-weight: lighter;
-    color:  #653117;
     border-radius: 5px;
     padding: 20px;
     margin-top: 20px;
+    background-color: #653117;
+    color: white;
+}
+
+.white-button{
+    color:  #653117;
+    background-color: white;
 }

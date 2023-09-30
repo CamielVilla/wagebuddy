@@ -1,18 +1,14 @@
 .outer-three {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    border-style: groove;
-    border-color: yellow;
 }
  .inner-three{
      display: flex;
      flex-direction: row;
      justify-content: space-between;
      align-items: flex-start;
-     border-style: groove;
-     border-color: green;
      margin-top: 50px;
      text-align: center;
      width: 1400px;
@@ -20,7 +16,7 @@
 
  .inner-three div{
      width: 466px;
-     padding: 50px;
-     border-style: groove;
-     border-color: black;
+     width: 350px;
+     margin-bottom: 50px;
+     /*padding: 50px;*/
  }

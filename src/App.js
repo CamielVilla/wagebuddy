@@ -13,6 +13,8 @@ import guy from '../src/assets/board.jpg';
 import Button from "./Reusables/Button/Button";
 import WhyWageBuddy from "./Pages/Texts/WhyWageBuddy";
 import Praktijkvoorbeeld from "./Pages/Texts/Praktijkvoorbeeld";
+import WhyTrustUs from "./Pages/Texts/WhyTrustUs";
+import Voorwaarden from "./Pages/Texts/Voorwaarden";
 
 
 function App() {
@@ -54,7 +56,7 @@ function App() {
      <>
     <Banner
     buttonId='scrollButton'
-    buttonClassName='scrollButtonClass'
+    buttonClassName='white-button'
     text='aanmelden'
     onClick={scrollToForm}
     />
@@ -68,7 +70,7 @@ function App() {
                   className='inner-two-page-reversed'
          textTwo=''>
              <WhyWageBuddy/>
-             <Button onClick={scrollToForm} text='aanmelden'/></TwoPage>
+             <Button  onClick={scrollToForm} text='aanmelden'/></TwoPage>
          <Chapter text='Hoe werkt het?'/>
          <HowItWorks
              buttonId='scrollButton'
@@ -93,21 +95,12 @@ function App() {
          /></TwoPage>
          <TwoPage
              className='inner-two-page'
-             type='img' content={desk} textTwo='Waarom ons vertrouwen?
-    Transparantie  We laten je precies zien hoe we tot onze schattingen komen
-Geen verborgen kosten. Onze dienst is gratis voor jou.
-We verdienen alleen als jij meer verdient. Jouw succes is ons succes
- We zijn gemotiveerd om het beste salaris voor je te onderhandelen.'
-                  />
+             type='img' content={desk}
+         ><WhyTrustUs/></TwoPage>
          <TwoPage className='inner-two-page-reversed'
-
-             textTwo='Voorwaarden
-
-                  Je hebt minimaal 3 jaar werkervaring
-         Je kunt aantonen dat je in je huidige functie in 2023 tenminste zal uitkomen op een verzamelinkomen van €45.000 (o.b.v. 38 uur)
-         Je solliciteert op banen in Nederland'
                   type='form' content={
              <form id='applyForm' onSubmit={handleSubmit(handleFormSubmit)}>
+                 <h2>Aanmelden</h2>
                     <input
                      id="naam"
                      type="naam"
@@ -153,13 +146,15 @@ We verdienen alleen als jij meer verdient. Jouw succes is ons succes
                              }
                          })}
                  />
+                 <button type='submit'>Verzenden</button>
+                 <h4>Wij nemen dezelfde werkdag nog contact met je op!</h4>
                  {errors.naam && <p>{errors.naam.message}</p>}
                  {errors.email && <p>{errors.email.message}</p>}
                  {errors.telefoon && <p>{errors.telefoon.message}</p>}
                  {addSucces && <p className='thanks'>Je aanmelding is geslaagd!</p>}
                  {duplicate && <h4>je e-mail adres is al bekend bij ons</h4>}
              </form>}
-         />
+         ><Voorwaarden/></TwoPage>
      </>
   )
 }

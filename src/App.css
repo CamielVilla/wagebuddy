@@ -4,7 +4,7 @@
 }
 
 .star-image {
-    height: 150px;
+    width: 150px;
 }
 
 h1 {
@@ -30,7 +30,7 @@ h3{
 
 h4 {
     font-family: Belleza, serif;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: lighter;
     color:  #653117;
 }
@@ -42,7 +42,7 @@ h5{
     color:  #653117;
 }
 
-p{
+p, ul, li{
     font-family: Belleza, serif;
     font-size: 25px;
     font-weight: lighter;
@@ -50,6 +50,10 @@ p{
 }
 .guy-image{
     flex-direction: row;
+}
+
+.inner-div li{
+    text-align: left;
 }
 
 @font-face {

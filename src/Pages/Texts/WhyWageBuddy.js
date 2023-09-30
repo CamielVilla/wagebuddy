@@ -2,8 +2,9 @@ import React from "react";
 
 function WhyWageBuddy(){
     return(
-        <div className='outer-div'>
-            <div className='inner-div'>
+        <div className='why-wage-buddy-outer'>
+            <div className='why-wage-buddy-inner'>
+                <br/><br/> <br/><br/>
         <h2>
             Waarom WageBuddy?
         <br/><br/>

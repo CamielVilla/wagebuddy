@@ -3,16 +3,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-style: groove;
-    border-color: yellow;
 }
 .inner-how-it-works{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    border-style: groove;
-    border-color: green;
     margin-top: 50px;
     text-align: center;
     width: 1400px;
@@ -21,6 +17,4 @@
 .inner-how-it-works div{
     width: 400px;
     padding: 50px;
-    border-style: groove;
-    border-color: black;
 }

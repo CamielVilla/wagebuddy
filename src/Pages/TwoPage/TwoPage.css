@@ -3,17 +3,13 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border-style: groove;
-    border-color: yellow;
 }
 
 .inner-two-page, .inner-two-page-reversed{
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
-    border-style: groove;
-    border-color: green;
     margin-top: 50px;
     text-align: center;
     width: 1400px;
@@ -28,9 +24,6 @@
     padding-left: 30px;
     padding-right: 30px;
     text-align: initial;
-    border-style: groove;
-    border-color: pink;
-
 }
 
 .two-page-text-1{
@@ -38,13 +31,52 @@
     padding-left: 30px;
     padding-right: 30px;
     text-align: initial;
-    border-style: groove;
-    border-color: yellow;
 }
 
 .two-page-text-1 img{
-    border-style: groove;
-    border-color: yellow;
-    width: 600px;
+    width: 500px;
     opacity: 60%;
+    z-index: -100;
+}
+
+
+
+.inner-two-page-reversed img{
+    width: 700px;
+}
+.inner-two-page img{
+    width: 700px;
+}
+
+.inner-div{
+    width: 500px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+form h4, form h2{
+    text-align: center;
+    margin: 20px;
+}
+input{
+    font-family: Belleza, serif;
+    font-size: 30px;
+    border-color:  #653117;
+    border-radius: 10px;
+    border-width: medium;
+    height: 75px;
+    width: 300px;
+    text-align: center;
+    margin: 10px;
+}
+.why-wage-buddy-outer{
+}
+.why-wage-buddy-inner{
+    width: 500px;
 }
