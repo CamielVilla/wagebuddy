@@ -1,7 +1,7 @@
 import React from "react";
 import './ThreePage.css'
 
-function ThreePage({}){
+function ThreePage(){
     return(
         <div className='outer-three'>
             <div className='inner-three'>

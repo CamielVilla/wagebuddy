@@ -10,7 +10,7 @@ function TwoPage({textTwo, content, type, children, className}){
         renderedContent = <img src={content} alt="Afbeelding" />;
     } else if (type === 'form') {
         renderedContent = <form>{content}</form>;
-    } else if (type = 'component') {
+    } else if (type === 'component') {
         renderedContent = <div className='inner-text'>{content}</div>
     }
     else {
