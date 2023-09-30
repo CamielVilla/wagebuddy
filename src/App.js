@@ -7,10 +7,8 @@ import Chapter from "./Pages/Chapter/Chapter";
 import stars from '../src/assets/Sterren.png'
 import ThreePage from "./Pages/ThreePage/ThreePage";
 import HowItWorks from "./Pages/HowItWorks/HowItWorks";
-import TwoPage from "./Pages/TwoPage/TwoPage";
 import desk from '../src/assets/girlsdesk.jpg'
 import guy from '../src/assets/board.jpg';
-import Button from "./Reusables/Button/Button";
 import WhyWageBuddy from "./Pages/Texts/WhyWageBuddy";
 import Praktijkvoorbeeld from "./Pages/Texts/Praktijkvoorbeeld";
 import WhyTrustUs from "./Pages/Texts/WhyTrustUs";
@@ -71,11 +69,16 @@ function App() {
              <img alt='stars' className='stars' src={stars}/>
          </Chapter>
          <ThreePage/>
-         <TwoPage type='img' content={guy}
-                  className='inner-two-page-reversed'
-         textTwo=''>
-             <WhyWageBuddy/>
-             <Button  onClick={scrollToForm} text='aanmelden'/></TwoPage>
+                 <div className='outer-div-praktijkvoorbeeld'>
+                     <div className='inner-div-praktijkvoorbeeld'>
+                         <img alt='guy' src={guy} className='guy'/>
+                         <WhyWageBuddy/>
+                     </div></div>
+         {/*<TwoPage type='img' content={guy}*/}
+         {/*         className='inner-two-page-reversed'*/}
+         {/*textTwo=''>*/}
+         {/*    <WhyWageBuddy/>*/}
+         {/*    <Button  onClick={scrollToForm} text='aanmelden'/></TwoPage>*/}
          <Chapter text='Hoe werkt het?'/>
          <HowItWorks
              buttonId='scrollButton'
@@ -101,10 +104,11 @@ function App() {
                  />
              </div>
          </div>
-         <TwoPage
-             className='inner-two-page-vertrouwen'
-             type='img' content={desk}
-         ><WhyTrustUs/></TwoPage>
+                 <div className='outer-div-praktijkvoorbeeld'>
+                     <div className='inner-div-praktijkvoorbeeld'>
+                         <WhyTrustUs/>
+                         <img alt='desk' className='desk' src={desk}/>
+                     </div></div>
          <div className='outer-bottom'>
              <div className='inner-bottom'>
                  <form className='inner-bottom-form' id='applyForm' onSubmit={handleSubmit(handleFormSubmit)}>

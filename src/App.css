@@ -9,6 +9,16 @@
     width: 150px;
 }
 
+.guy {
+    width: 600px;
+    margin-right: 100px;
+}
+
+.desk {
+    width: 500px;
+    margin-left: 100px;
+}
+
 h1 {
     font-family: Logo, serif;
     font-size: 80px;
@@ -126,6 +136,15 @@ p, ul, li{
         width: 150px;
     }
 
+    .guy{
+        width: 300px;
+        margin: 0;
+    }
+    .desk {
+        width: 300px;
+        margin-left: 0;
+        margin-top: 100px;
+    }
     h1 {
         font-family: Logo, serif;
         font-size: 40px;
@@ -161,9 +180,25 @@ p, ul, li{
      align-items: center;
  }
 
-    .inner-bottom h2 {
-        margin-top: 30px;
+ .inner-bottom-text {
+     width: 300px;
+ }
+
+
+    .inner-bottom-form {
+        width: 300px;
     }
+
+
+    .inner-bottom h2 {
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+
+    .inner-bottom button {
+        margin-top: 50px;
+    }
+
     h2 {
         font-family: Belleza, serif;
         font-size: 45px;

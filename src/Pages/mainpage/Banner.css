@@ -37,3 +37,19 @@
     text-align: center;
 }
 
+@media (min-width: 100px) and (max-width: 1400px) {
+
+    .outer-border {
+        width: 105%;
+    }
+    .inner-border {
+        width: 80%;
+    }
+
+    .text-1, .text-2, .text-3 {
+        width: 300px;
+        padding: 0;
+        margin: 0;
+    }
+}
+

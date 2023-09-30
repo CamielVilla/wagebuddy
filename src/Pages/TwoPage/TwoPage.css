@@ -18,6 +18,7 @@
 
 .why-trust-us-inner{
     flex-direction: column;
+    text-align: left;
 }
 
 .inner-two-page-reversed {
@@ -42,9 +43,6 @@
     width: 500px;
     opacity: 60%;
 }
-
-
-
 
 
 .inner-two-page-reversed img{
@@ -83,9 +81,8 @@ input{
     text-align: center;
     margin: 10px;
 }
-.why-wage-buddy-outer{
-}
-.why-wage-buddy-inner{
+
+.why-wage-buddy-inner, .why-trust-us-inner{
     width: 500px;
 }
 
@@ -101,12 +98,28 @@ input{
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+        width: 100px;
     }
 
     .inner-two-page-vertrouwen {
         flex-direction: column-reverse;
         justify-content: flex-start;
         align-items: center;
+    }
+
+    .why-trust-us-outer{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .why-trust-us-inner {
+        display: flex;
+        flex-direction: column;
+        width: 50px;
+    }
+
+    .two-page-text-2{
+    width: 10px;
     }
 
     .two-page-text-1 {
@@ -117,7 +130,7 @@ input{
     }
 
     .inner-two-page-vertrouwen img, .inner-two-page-reversed img {
-        width:80%;
+        width:50%;
         align-self: center;
         justify-self: center;
     }
@@ -127,8 +140,13 @@ input{
         padding: 50px;
     }
 
-    .why-wage-buddy-inner {
+    .why-wage-buddy-inner, .why-trust-us-inner {
+        margin-top: 0;
         width: 300px;
+    }
+
+    .why-trust-us-inner h2{
+        text-align: center;
     }
 
     .outer-div-praktijkvoorbeeld {
