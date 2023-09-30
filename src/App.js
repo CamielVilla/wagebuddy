@@ -30,7 +30,7 @@ function App() {
     async function handleFormSubmit(data){
         try{
             setLoading(true);
-            const response = await axios.post("https://wagebuddy-f935672a2f3c.herokuapp.com/addemail",{
+            const response = await axios.post("https://wagebuddy-17bc189c4ec0.herokuapp.com/addemail",{
                 name: data.name,
                 emailAddress: data.email,
                 phone: data.tel,
@@ -40,7 +40,7 @@ function App() {
                 toggleDuplicate(false);
                 toggleAddSucces(true);
                 const emailField = document.getElementById("email");
-                const nameField = document.getElementById("name");
+                const nameField = document.getElementById("naam");
                 const phoneField = document.getElementById("tel");
                 emailField.value = "";
                 nameField.value = "";
@@ -58,10 +58,6 @@ function App() {
     }
   return (
      <>
-         {loading ?
-             <div className="loader-container">
-                 <div className="spinner"></div>
-             </div> :
              <section>
                  <Banner
                      buttonId='scrollButton'
@@ -174,12 +170,21 @@ function App() {
                                          }
                                      })}
                              />
-                             <button type='submit'>Verzenden</button>
+                             {loading ? (
+                                 <div className="loader-container">
+                                     <div className="spinner"></div>
+                                 </div>
+                             ) : addSucces ? (
+                                 <h4>Je aanmelding is geslaagd!</h4>
+                             ) : (
+                                 <button type="submit">Verzenden</button>
+                             )}
+
                              <h4>Wij nemen dezelfde werkdag nog contact met je op!</h4>
                              {errors.naam && <p>{errors.naam.message}</p>}
                              {errors.email && <p>{errors.email.message}</p>}
                              {errors.telefoon && <p>{errors.telefoon.message}</p>}
-                             {addSucces && <p className='thanks'>Je aanmelding is geslaagd!</p>}
+                             {/*{addSucces && <p className='thanks'>Je aanmelding is geslaagd!</p>}*/}
                              {duplicate && <h4>je e-mail adres is al bekend bij ons</h4>}
                          </form>
                          <div className='inner-bottom-text'>
@@ -204,7 +209,6 @@ function App() {
                      </div>
                  </div>
              </section>
-         }
      </>
   )
 }
