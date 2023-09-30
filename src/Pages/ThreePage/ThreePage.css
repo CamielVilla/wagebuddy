@@ -1,7 +1,7 @@
 .outer-three {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
  .inner-three{
@@ -16,7 +16,7 @@
 
  .inner-three div{
      width: 350px;
-     margin-bottom: 50px;
+     margin-bottom: 100px;
      /*padding: 50px;*/
  }
  
@@ -31,5 +31,6 @@
          flex-direction: column;
          justify-content: flex-start;
          align-items: center;
+         width: 300px;
      }
  }

@@ -12,6 +12,7 @@ import guy from '../src/assets/board.jpg';
 import WhyWageBuddy from "./Pages/Texts/WhyWageBuddy";
 import Praktijkvoorbeeld from "./Pages/Texts/Praktijkvoorbeeld";
 import WhyTrustUs from "./Pages/Texts/WhyTrustUs";
+import './Pages/TwoPage/TwoPage.css'
 
 
 function App() {
@@ -51,7 +52,6 @@ function App() {
     }
   return (
      <>
-
          {loading ?
              <div className="loader-container">
                  <div className="spinner"></div>
@@ -63,22 +63,22 @@ function App() {
     text='aanmelden'
     onClick={scrollToForm}
     />
+                 <section className='section-divider'>
          <Chapter
          text='Sluit je aan bij 241 blije professionals'
          >
              <img alt='stars' className='stars' src={stars}/>
          </Chapter>
          <ThreePage/>
+                 </section>
+                 <section className='section-divider'>
                  <div className='outer-div-praktijkvoorbeeld'>
                      <div className='inner-div-praktijkvoorbeeld'>
                          <img alt='guy' src={guy} className='guy'/>
                          <WhyWageBuddy/>
                      </div></div>
-         {/*<TwoPage type='img' content={guy}*/}
-         {/*         className='inner-two-page-reversed'*/}
-         {/*textTwo=''>*/}
-         {/*    <WhyWageBuddy/>*/}
-         {/*    <Button  onClick={scrollToForm} text='aanmelden'/></TwoPage>*/}
+                 </section>
+                 <section className='section-divider'>
          <Chapter text='Hoe werkt het?'/>
          <HowItWorks
              buttonId='scrollButton'
@@ -86,6 +86,8 @@ function App() {
              text='aanmelden'
              onClick={scrollToForm}
          />
+                 </section>
+                 <section className='section-divider'>
          <Chapter text='Praktijkvoorbeeld: Jonne'/>
          <div className='outer-div-praktijkvoorbeeld'>
              <div className='inner-div-praktijkvoorbeeld'>
@@ -104,11 +106,14 @@ function App() {
                  />
              </div>
          </div>
+                 </section>
+                 <section className='section-divider'>
                  <div className='outer-div-praktijkvoorbeeld'>
                      <div className='inner-div-praktijkvoorbeeld'>
                          <WhyTrustUs/>
                          <img alt='desk' className='desk' src={desk}/>
                      </div></div>
+                 </section>
          <div className='outer-bottom'>
              <div className='inner-bottom'>
                  <form className='inner-bottom-form' id='applyForm' onSubmit={handleSubmit(handleFormSubmit)}>

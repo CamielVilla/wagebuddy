@@ -12,11 +12,29 @@
 .guy {
     width: 600px;
     margin-right: 100px;
+    opacity: 0.6;
+    margin-bottom: 100px;
+}
+
+.section-divider {
+    border-bottom: 1px solid #ddd;
+    margin-top: 50px;
+}
+
+
+.spinner {
+    width: 64px;
+    height: 64px;
+    border: 8px solid;
+    border-color: #3d5af1 transparent #3d5af1 transparent;
+    border-radius: 50%;
+    animation: spin-anim 1.2s linear infinite;
 }
 
 .desk {
     width: 500px;
     margin-left: 100px;
+    opacity: 0.6;
 }
 
 h1 {
@@ -59,9 +77,6 @@ p, ul, li{
     font-size: 25px;
     font-weight: lighter;
     color:  #653117;
-}
-.guy-image{
-    flex-direction: row;
 }
 
 .inner-div li{
@@ -111,10 +126,12 @@ p, ul, li{
     margin-top: 50px;
     text-align: center;
     width: 1400px;
+    margin-bottom: 100px;
 }
 
 .voorbeeld {
     width: 600px;
+    text-align: left;
 }
 
 .inner-bottom-text, .inner-bottom-form{
@@ -164,6 +181,7 @@ p, ul, li{
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+        width: 300px;
     }
 
     .voorbeeld {

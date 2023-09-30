@@ -15,8 +15,9 @@
 }
 
 .inner-how-it-works div{
-    width: 400px;
-    padding: 50px;
+    width: 300px;
+    margin-bottom: 100px;
+    margin-left: 50px;
 }
 
 @media (min-width: 100px) and (max-width: 1400px) {
@@ -28,5 +29,9 @@
         justify-content: flex-start;
         align-items: center;
         width: 300px;
+    }
+
+    .inner-how-it-works div {
+        margin-left: 0;
     }
 }

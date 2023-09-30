@@ -1,4 +1,7 @@
 .outer-chapter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -9,6 +12,12 @@
     align-items: center;
     margin-top: 50px;
     text-align: center;
+    width: 1400px;
 }
 
+@media (min-width: 100px) and (max-width: 1400px) {
+    .inner-chapter {
+        width: 300px;
+    }
+}
 
