@@ -40,7 +40,11 @@ function App() {
                 toggleDuplicate(false);
                 toggleAddSucces(true);
                 const emailField = document.getElementById("email");
+                const nameField = document.getElementById("name");
+                const phoneField = document.getElementById("tel");
                 emailField.value = "";
+                nameField.value = "";
+                phoneField.value = "";
                 setLoading(false);
             }else{
                 toggleAddSucces(false);
