@@ -184,7 +184,6 @@ function App() {
                              {errors.email && <p>{errors.email.message}</p>}
                              {errors.telefoon && <p>{errors.telefoon.message}</p>}
                              {/*{addSucces && <p className='thanks'>Je aanmelding is geslaagd!</p>}*/}
-                             {duplicate && <h4>je e-mail adres is al bekend bij ons</h4>}
                          </form>
                          <div className='inner-bottom-text'>
                              <div className='title'>
