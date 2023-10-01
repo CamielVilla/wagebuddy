@@ -15,7 +15,6 @@
     background-attachment: scroll;
     background-position: center top;
     background-clip: content-box;
-    z-index: -1;
 }
 
 .inner-border {

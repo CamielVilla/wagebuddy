@@ -13,12 +13,6 @@ function Banner({text, onClick, buttonId, buttonClassName}){
                     <h2>Wij vechten voor jouw salaris!</h2>
                     <Button onClick={onClick} id={buttonId} className={buttonClassName} text={text}/>
                 </div>
-                {/*<div className='text-2'>*/}
-
-                {/*</div>*/}
-                {/*<div className='text-3'>*/}
-                {/*</div>*/}
-                {/*<div />*/}
             </div>
         </div>
     )

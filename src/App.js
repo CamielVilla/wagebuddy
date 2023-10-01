@@ -18,7 +18,6 @@ import './Pages/TwoPage/TwoPage.css'
 function App() {
   const {register, handleSubmit, formState: {errors}} = useForm();
     const [addSucces, toggleAddSucces] = useState(false);
-    const [duplicate, toggleDuplicate] = useState(false);
     const [loading, setLoading] = useState(false);
 
   function scrollToForm(){
@@ -28,17 +27,14 @@ function App() {
   }
 
     async function handleFormSubmit(data){
-      //
         try{
             setLoading(true);
             const response = await axios.post("https://wagebuddy-f935672a2f3c.herokuapp.com/addemail",{
-                name: data.name,
+                name: data.naam,
                 emailAddress: data.email,
                 phone: data.tel,
             })
-
             if (response.data){
-                toggleDuplicate(false);
                 toggleAddSucces(true);
                 const emailField = document.getElementById("email");
                 const nameField = document.getElementById("naam");
@@ -49,7 +45,6 @@ function App() {
                 setLoading(false);
             }else{
                 toggleAddSucces(false);
-                toggleDuplicate(true);
                 setLoading(false);
             }
         }catch (data) {
@@ -178,11 +173,10 @@ function App() {
                              ) : (
                                  <button type="submit">Verzenden</button>
                              )}
-
-                             <h4>Wij nemen dezelfde werkdag nog contact met je op!</h4>
                              {errors.naam && <p>{errors.naam.message}</p>}
                              {errors.email && <p>{errors.email.message}</p>}
                              {errors.telefoon && <p>{errors.telefoon.message}</p>}
+                             <h4>Wij nemen dezelfde werkdag nog contact met je op!</h4>
                              {/*{addSucces && <p className='thanks'>Je aanmelding is geslaagd!</p>}*/}
                          </form>
                          <div className='inner-bottom-text'>
