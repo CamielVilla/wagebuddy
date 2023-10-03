@@ -41,7 +41,7 @@
 @media (min-width: 100px) and (max-width: 1400px) {
 
     .outer-border {
-        width: 106%;
+        width: 100%;
     }
     .inner-border {
         width: 80%;
