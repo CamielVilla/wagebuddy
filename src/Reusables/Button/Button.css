@@ -1,5 +1,4 @@
 button {
-    /*background: none;*/
     border: none;
     font-family: Belleza, serif;
     font-size: 35px;
@@ -10,6 +9,7 @@ button {
     background-color: #653117;
     color: white;
     z-index: 5;
+    cursor: pointer;
 }
 
 .white-button{

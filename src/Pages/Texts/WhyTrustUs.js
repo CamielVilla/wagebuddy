@@ -10,7 +10,7 @@ function WhyTrustUs(){
                 </h2>
                 <ul>
                     <li><u>Transparantie</u><br/>
-                        We laten je precies zien hoe we tot onze schattingen komen
+                        We laten je precies zien hoe we tot onze schattingen komen.
                     </li><br/>
                     <li><u>geen verborgen kosten</u><br/>
                         Onze dienst is gratis voor jou. We verdienen alleen als jij meer verdient.

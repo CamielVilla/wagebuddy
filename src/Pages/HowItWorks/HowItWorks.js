@@ -9,9 +9,9 @@ function HowItWorks({text, onClick, buttonId, buttonClassName}){
                 <div className='hiwTextOne'>
                     <p>#1 Intakegesprek
                     <br/><br/>
-                        Deel je huidige verwachte verzamelinkomen* en
-                        (indien al van toepassing)
-                        de vacature(s) waarin/waarvoor je geïnteresseerd/benaderd bent.
+                        Ben je op zoek naar werk, heb je iets op het oog,
+                        ben je al in gesprek met bedrijven of word je helemaal gek van recruiters die je stalken?
+                        We bespreken het in een kort telefoongesprek.
                         <br/><br/><br/>
                     </p>
                     <h5>*Minimaal €45.000 o.b.v. 38 uur</h5>
@@ -29,12 +29,11 @@ function HowItWorks({text, onClick, buttonId, buttonClassName}){
                 <div className='hiwTextThree'>
                     <p>#3 Succes delen
                         <br/><br/>
-                    Alles wat we bovenop je geschatte salaris onderhandelen,
-                        delen we 50/50* gedurende twaalf maanden.
+                        Alles wat we bovenop je geschatte salaris onderhandelen,
+                        delen we 67/33* gedurende twaalf maanden.
                         <br/><br/><br/></p>
-                    <h5>*Onze fee wordt altijd berekend o.b.v. 38 uur.
-                        Bijv. als je 32 uur werkt is onze
-                        fee 54% van wat je daadwerkelijk extra verdient</h5>
+                    <h5>*Onze fee is exclusief BTW en wordt altijd berekend alsof
+                        je 38 uur werkt.</h5>
                 </div>
             </div>
         </div>

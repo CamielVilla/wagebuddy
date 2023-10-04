@@ -91,17 +91,21 @@ function App() {
                      <div className='outer-div-praktijkvoorbeeld'>
                          <div className='inner-div-praktijkvoorbeeld'>
                              <Praktijkvoorbeeld
-                                 one='#1 Jonne zou met haar salaris op een
-                     verwacht verzamelinkomen uitkomen van €53.000 over 2023, op basis van
-                     38 uur uur werken.'
-                                 two='#2 Ze was geïnteresseerd in een 38-urige baan met een salaris-range van €50.000 - €70.000.'
-                                 three='#3 Een gemiddelde vrouw van haar leeftijd zou na de onderhandeling uitkomen op €59.000, wat voor Jonne ook voelde als een prima salaris.
-                    Normaal gesproken zou ze op dit salaris mikken.'
+                                 one='#1 Jonne zou bij voortzetting van haar huidige baan op een verwacht
+                                 bruto verzamelinkomen uitkomen van
+                                 €53.000 in 2023, op basis van 38 uur uur werken.'
+                                 two='#2 Ze is geïnteresseerd in een 38-urige baan waarbij een salaris-range van €50.000 - €70.000 is aangegeven.'
+                                 three='#3 Een gemiddelde professional met haar profiel zou na de
+                                 onderhandeling ongeveer uitkomen op €59.000, wat voor Jonne ook voelt als
+                                 een prima salaris.
+                                 Normaal gesproken zou ze op dit salaris mikken.'
                              />
                              <Praktijkvoorbeeld
-                                 one='#4 Ze besloot om met WageBuddy in zee te gaan, die voor haar een salaris van €68.000 onderhandelde, ofwel €9.000 boven het verwachte salaris.'
-                                 two='#5 De 50% bonus voor WageBuddy kwam neer op €4.500, die Jonne nu in 12 termijnen €375 betaalt.'
-                                 three='#6 Het resultaat voor Jonne is €4.500 over het eerste jaar, en €9.000 over ieder jaar daarop. Bovendien heeft ze bij haar volgende job switch een veel betere uitgangspositie.'
+                                 one='#4 Ze besluit om met WageBuddy in zee te gaan, die voor haar een salaris van
+                                 €68.000 onderhandelt, ofwel €9.000 boven het verwachte salaris.'
+                                 two='#5 De 33% bonus voor WageBuddy komt inclusief BTW neer op €3.630 die Jonne in 12 termijnen €302,50 betaalt.'
+                                 three='#6 Het eerste jaar houdt Jonne netto ongeveer €2.300 meer over dan ze normaal gesproken zou doen. Daarna is dit ongeveer €5.900 per jaar.
+                                 Bovendien heeft ze bij haar volgende job switch een veel betere uitgangspositie.'
                              />
                          </div>
                      </div>
@@ -134,6 +138,7 @@ function App() {
                                          }
                                      })}
                              />
+                             {errors.naam && <p>{errors.naam.message}</p>}
                              <input
                                  id="email"
                                  type="email"
@@ -150,6 +155,7 @@ function App() {
                                          }
                                      })}
                              />
+                             {errors.email && <p>{errors.email.message}</p>}
                              <input
                                  id="tel"
                                  type="tel"
@@ -166,17 +172,17 @@ function App() {
                                          }
                                      })}
                              />
+                             {errors.tel && <p>{errors.tel.message}</p>}
                              {loading ? (
                                      <div className="spinner"></div>
                              ) : addSucces ? (
-                                 <h4>Je aanmelding is geslaagd!</h4>
+                                 <h4>Je aanmelding is geslaagd.</h4>
                              ) : (
                                  <button type="submit">Verzenden</button>
                              )}
-                             {errors.naam && <p>{errors.naam.message}</p>}
-                             {errors.email && <p>{errors.email.message}</p>}
-                             {errors.telefoon && <p>{errors.telefoon.message}</p>}
-                             <h4>Wij nemen dezelfde werkdag nog contact met je op!</h4>
+
+
+                             <h4>Wij proberen dezelfde werkdag nog contact met je op te nemen.</h4>
                              {/*{addSucces && <p className='thanks'>Je aanmelding is geslaagd!</p>}*/}
                          </form>
                          <div className='inner-bottom-text'>
@@ -187,14 +193,14 @@ function App() {
                                  </h2>
                              </div>
                              <ul>
-                                 <li>Je hebt minimaal 3 jaar werkervaring
+                                 <li>Je hebt minimaal 3 jaar werkervaring.
                                  </li>
                                  <br/>
-                                 <li>Je kunt aantonen dat je in je huidige functie in 2023 tenminste zal uitkomen op een
-                                     verzamelinkomen van €45.000 (o.b.v. 38 uur)
+                                 <li>Je kunt aantonen dat je bij voortzetting van je huidige functie in 2023 tenminste zou uitkomen op
+                                     een verzamelinkomen van €45.000 bij 38 uur per week.
                                  </li>
                                  <br/>
-                                 <li>Je solliciteert op banen in Nederland
+                                 <li>Je solliciteert op banen in Nederland.
                                  </li>
                              </ul>
                          </div>

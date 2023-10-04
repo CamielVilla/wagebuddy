@@ -10,11 +10,11 @@ function Voorwaarden(){
                     <br/><br/>
                 </h2>
                 <ul>
-                <li>Je hebt minimaal 3 jaar werkervaring
+                <li>Je hebt minimaal 3 jaar werkervaring.
                 </li><br/>
-                <li>Je kunt aantonen dat je in je huidige functie in 2023 tenminste zal uitkomen op een verzamelinkomen van €45.000 (o.b.v. 38 uur)
+                <li>Je kunt aantonen dat je bij voortzetting van je huidige functie in 2023 tenminste zou uitkomen op een verzamelinkomen van €45.000 bij 38 uur per week.
                 </li><br/>
-                <li>Je solliciteert op banen in Nederland
+                <li>Je solliciteert op banen in Nederland.
                 </li>
             </ul>
             </div>
