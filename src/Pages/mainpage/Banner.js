@@ -1,6 +1,5 @@
 import React from "react";
 import './Banner.css'
-import '../../assets/banner.jpg'
 import Button from "../../Reusables/Button/Button";
 
 function Banner({text, onClick, buttonId, buttonClassName}){
